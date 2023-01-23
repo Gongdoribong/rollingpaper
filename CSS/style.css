@@ -1,0 +1,137 @@
+@import "reset.css";
+body {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 대지 */
+.container {
+    background-color: aliceblue;
+    height: 100%;
+    padding: 5%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.smallContainer {
+    background-color: aliceblue;
+    width: 500px;
+    height: 100%;
+    padding: 2%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+form {
+    background-color: rgb(240, 255, 212);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+/* 그리기 */
+.sketchpad {
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.068);
+}
+
+.controls {
+    margin-top: 80px;
+}
+
+.controls .controls__colors {
+    display: flex;
+}
+
+.controls__colors .controls__color {
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.068);
+    border-radius: 25px;
+}
+
+.form-label {
+    padding-top: 2%;
+    width : 100%
+}
+
+.controls__btns button {
+    background-color: white;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* 파일 업로드 */
+
+#preview-image {
+    object-fit: cover;
+    position: relative;
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+}
+
+/* 음식 선택 */
+.nav-tabs {
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link {
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+}
+
+.tab-content {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: space-between;
+}
+label.btn {
+    padding: 0px;
+}
+.tab-pane>ul>li { 
+    width: 33.333%;
+    list-style: none;
+    float: left;
+}
+
+/* 편지쓰기 */
+.left {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.right {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+

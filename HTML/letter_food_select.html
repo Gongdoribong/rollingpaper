@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>상차리기</title>
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+        <style>
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <button type="button" class="btn"><a href="./main.html">돌아가기</a></button>
+            <button type="button" class="btn"><a href="./letter_writing.html">다음</a></button>
+        </nav>
+        <div class="describe">
+            <p>상 위에 올라갈 음식을 골라주세요!</p>
+        </div>
+        <form action="./letter_writing.html" method="post">
+            <div class="smallContainer">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="maindish-tab" data-bs-toggle="tab" data-bs-target="#maindish-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">식사</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="drink-tab" data-bs-toggle="tab" data-bs-target="#drink-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">음료</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="dessert-tab" data-bs-toggle="tab" data-bs-target="#dessert-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">후식</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="abroad-tab" data-bs-toggle="tab" data-bs-target="#abroad-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">서양</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="maindish-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <ul class="maindish">
+                            <li><input type="radio" id="koChicken" class="btn-check" name="option" value="koChicken" autocomplete="off"><label for="koChicken" class="btn"><img src="https://dummyimage.com/300x300/929292/000000.png&text=preview+image" alt="닭백숙"></label></li>
+                            <li><input type="radio" id="chicken" class="btn-check" name="option" value="chicken" autocomplete="off"><label for="chicken" class="btn"><img src="https://dummyimage.com/300x300/929292/000000.png&text=preview+image" alt="닭튀김"></label></li>
+                            <li><input type="radio" id="fish" class="btn-check" name="option" value="fish" autocomplete="off"><label for="fish" class="btn"><img src="https://dummyimage.com/300x300/929292/000000.png&text=preview+image" alt="생선"></label></li>
+                            <li><input type="radio" id="rice" class="btn-check" name="option" value="rice" autocomplete="off"><label for="rice" class="btn"><img src="https://dummyimage.com/300x300/929292/000000.png&text=preview+image" alt="밥"></label></li>
+                            <li><input type="radio" id="soup" class="btn-check" name="option" value="soup" autocomplete="off"><label for="soup" class="btn"><img src="https://dummyimage.com/300x300/929292/000000.png&text=preview+image" alt="국"></label></li>
+                            <li><input type="radio" id="jeon" class="btn-check" name="option" value="jeon" autocomplete="off"><label for="jeon" class="btn"><img src="https://dummyimage.com/300x300/929292/000000.png&text=preview+image" alt="전"></label></li>
+                            <li><input type="radio" id="kkochi" class="btn-check" name="option" value="kkochi" autocomplete="off"><label for="kkochi" class="btn"><img src="https://dummyimage.com/300x300/929292/000000.png&text=preview+image" alt="꼬치"></label></li>
+                            <li><input type="radio" id="jeonliptu" class="btn-check" name="option" value="jeonliptu" autocomplete="off"><label for="jeonliptu" class="btn"><img src="https://dummyimage.com/300x300/929292/000000.png&text=preview+image" alt="전립투"></label></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="drink-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                        <ul class="drink">
+                            <li><input type="radio" id="coffee" class="btn-check" name="option" value="coffee" autocomplete="off"><label for="coffee" class="btn"><img src="https://dummyimage.com/300x300/929292/000000.png&text=preview+image" alt="가배"></label></button></li>
+                            <li><input type="radio" id="greentea" class="btn-check" name="option" value="greentea" autocomplete="off"><label for="greentea" class="btn"><img src="https://dummyimage.com/300x300/929292/000000.png&text=preview+image" alt="녹차"></label></button></li>
+                            <li><input type="radio" id="posion" class="btn-check" name="option" value="posion" autocomplete="off"><label for="posion" class="btn"><img src="https://dummyimage.com/300x300/929292/000000.png&text=preview+image" alt="용기의 물약"></label></button></li>
+                            <li><input type="radio" id="omija" class="btn-check" name="option" value="omija" autocomplete="off"><label for="omija" class="btn"><img src="https://dummyimage.com/300x300/929292/000000.png&text=preview+image" alt="오미자차"></label></button></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="dessert-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                        <ul class="dessert">
+                            <li><input type="radio" id="tteok" class="btn-check" name="option" value="tteok" autocomplete="off"><label for="tteok" class="btn"><img src="https://dummyimage.com/300x300/929292/000000.png&text=preview+image" alt="떡"></label></button></li>
+                            <li><input type="radio" id="gotgam" class="btn-check" name="option" avalue="gotgam" utocomplete="off"><label for="gotgam" class="btn"><img src="https://dummyimage.com/300x300/929292/000000.png&text=preview+image" alt="곶감"></label></button></li>
+                            <li><input type="radio" id="candy" class="btn-check" name="option" value="candy" autocomplete="off"><label for="candy" class="btn"><img src="https://dummyimage.com/300x300/929292/000000.png&text=preview+image" alt="옥춘이"></label></button></li>
+                            <li><input type="radio" id="apple" class="btn-check" name="option" value="apple" autocomplete="off"><label for="apple" class="btn"><img src="https://dummyimage.com/300x300/929292/000000.png&text=preview+image" alt="사과"></label></button></li>
+                            <li><input type="radio" id="pear" class="btn-check" name="option" value="pear" autocomplete="off"><label for="pear" class="btn"><img src="https://dummyimage.com/300x300/929292/000000.png&text=preview+image" alt="배"></label></button></li>
+                            <li><input type="radio" id="yakgwa" class="btn-check" name="option" value="yakgwa" autocomplete="off"><label for="yakgwa" class="btn"><img src="https://dummyimage.com/300x300/929292/000000.png&text=preview+image" alt="약과"></label></button></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="abroad-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+                        <ul class="abroad">
+                            <li><input type="radio" id="pineapplepizza" class="btn-check" name="option" value="pineapplepizza" autocomplete="off"><label for="pineapplepizza" class="btn"><img src="https://dummyimage.com/300x300/929292/000000.png&text=preview+image" alt="개불알피자"></label></button></li>
+                            <li><input type="radio" id="shit" class="btn-check" name="option" value="shit" autocomplete="off"><label for="shit" class="btn"><img src="https://dummyimage.com/300x300/929292/000000.png&text=preview+image" alt="음식 같은 것"></label></button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <script src="../resources/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

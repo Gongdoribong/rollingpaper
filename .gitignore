@@ -1,1 +1,6 @@
 image/
+resources/
+yiom-sketchpad-0.1.0-14-g93a52dc/
+node_modules/
+package-lock.json
+package.json

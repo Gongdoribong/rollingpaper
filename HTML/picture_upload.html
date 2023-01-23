@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>병풍세우기</title>
+
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <nav>
+        <button class="btn" type="button"><a href="./picture_way_select.html">이전</a></button>
+        <button class="btn" type="button"><a href="./picture_success.html">다음</a></button>
+    </nav>
+    <div class="smallContainer">
+        <label for="formFile" class="form-label">업로드</label>
+        <input class="form-control" type="file" id="formFile" onchange="setThumbnail(event);">
+
+        <label for="preview-image" class="form-label">미리보기</label>
+        <div id="preview-image">
+        </div>
+    </div>
+    <script src="../JS/uploadScript.js"></script>
+</body>
+</html>

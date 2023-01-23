@@ -1,0 +1,81 @@
+body {
+    height: 100vh;
+    background-image: url("../image/background/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.main-top.left {
+    margin-left: auto;
+}
+
+.main-top.right {
+    margin-right: auto;
+}
+
+.main-bottom {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/* @@@@@@@@ 내일 하기 @@@@@@@ */
+.desk {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+.screen {
+    position: absolute;
+    bottom: 10%;
+    height: 89vh;
+}
+
+@media (max-width: 767.98px){
+    .menu {
+        display: block;
+        position: absolute;
+        top: 0;
+    }
+    .main-top {
+        position: absolute;
+        top: 0;
+    
+        z-index: 1018;
+    }
+    
+    .main-top.left {
+        left: 0;
+
+        z-index: 4080;
+    }
+    
+    .main-top.right {
+        right: 0;
+
+        z-index: 4080;
+    }
+    
+    .main-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1018;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+}

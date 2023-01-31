@@ -8,7 +8,7 @@ body {
 .menu {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: absolute;
     bottom: 0;
@@ -16,13 +16,6 @@ body {
     left: 0;
 }
 
-.main-top.left {
-    margin-left: auto;
-}
-
-.main-top.right {
-    margin-right: auto;
-}
 
 .main-bottom {
     display: flex;
@@ -30,11 +23,14 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-/* @@@@@@@@ 내일 하기 @@@@@@@ */
+
 .desk {
+    object-fit: cover;
     position: absolute;
     bottom: 0;
+    height: 35vh;
     width: 100vw;
+    overflow: hidden;
 }
 .screen {
     position: absolute;

@@ -3,9 +3,10 @@ const colors = document.getElementsByClassName("color");
 const range = document.getElementById("jsRange");
 const erase = document.getElementById("erase");
 const ctx = canvas.getContext("2d");
+const rect = canvas.getBoundingClientRect();
 
-canvas.width = 700;
-canvas.height = 700;
+canvas.width = 300;
+canvas.height = 500;
 
 ctx.strokeStyle = "#000000";
 ctx.lineWidth = 2.5; /* 라인 굵기 */
@@ -19,7 +20,7 @@ function stopPainting() {
 function startPainting() {
     painting = true;
 }
-// @@@@@@@@@@@ 터치 반응 넣기 @@@@@@@@@@@@
+
 function onMouseMove(event) {
     const x = event.offsetX;
     const y = event.offsetY;
@@ -32,6 +33,24 @@ function onMouseMove(event) {
 			ctx.lineTo(x, y);
 			ctx.stroke();
 		}
+}
+// 터치스크린 - 합칠 수 있을듯 나중에 개선
+function m_startPainting(event) {
+    painting = true;
+}
+
+function m_onMouseMove(event) {
+    const x = event.touches[0].pageX - rect.left;
+    const y = event.touches[0].pageY - rect.top;
+
+    if(!painting) {
+        ctx.beginPath();
+        ctx.moveTo(x, y);
+    }
+    else {
+        ctx.lineTo(x, y);
+        ctx.stroke();
+    }
 }
 
 function handleColorClick(event) {
@@ -53,6 +72,10 @@ if (canvas) {
     canvas.addEventListener("mousedown", startPainting);
     canvas.addEventListener("mouseup", stopPainting);
     canvas.addEventListener("mouseleave", stopPainting);
+
+    canvas.addEventListener("touchstart", m_startPainting);
+    canvas.addEventListener("touchmove", m_onMouseMove);
+    canvas.addEventListener("touchend", stopPainting);
 }
 
 Array.from(colors).forEach(color => 

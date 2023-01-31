@@ -10,16 +10,18 @@
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
-    <nav>
-        <button class="btn" type="button"><a href="./picture_way_select.html">이전</a></button>
-        <button class="btn" type="button"><a href="./picture_success.html">다음</a></button>
-    </nav>
     <div class="smallContainer">
-        <label for="formFile" class="form-label">업로드</label>
-        <input class="form-control" type="file" id="formFile" onchange="setThumbnail(event);">
-
-        <label for="preview-image" class="form-label">미리보기</label>
-        <div id="preview-image">
+        <nav>
+            <button class="btn btn-outline-primary" type="button" onclick="location.href='./picture_way_select.html';">이전</button>
+            <button class="btn btn-outline-primary" type="button" onclick="location.href='./picture_success.html';">다음</button>
+        </nav>
+        <div class="upload">
+            <label for="formFile" class="form-label">업로드 (비율은 3:5로 자동 조정됩니다.)</label>
+            <input class="form-control" type="file" id="formFile" onchange="setThumbnail(event);">
+    
+            <label for="preview-image" class="form-label">미리보기</label>
+            <div id="preview-image" class="ratio" style="--bs-aspect-ratio: calc(5 / 3 * 100%);">
+            </div>
         </div>
     </div>
     <script src="../JS/uploadScript.js"></script>

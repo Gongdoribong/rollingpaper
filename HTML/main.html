@@ -16,16 +16,20 @@
         <img class="desk" src="../image/background/desk.png" alt="상">
         <nav class="menu">
             <div class="main-top left">
-                <button type="button" class="btn" id="musicOn_btn"><img src="../image/icon/musicOn.svg" alt="가락 재생"></button>
+                <button type="button" class="btn" id="musicOn_btn"></button>
             </div>
             <div class="main-bottom">
-                <button type="button" class="btn btn-light"><a href="./letter_food_select.html">상차리기<br>(편지쓰기)</a></button>
-                <button type="button" class="btn"><img src="../image/icon/sample.jpg" alt="관리자"style="width:100px; height:100px;"></button>
-                <button type="button" class="btn btn-light"><a href="./picture_way_select.html">병풍세우기<br>(사진이나그림)</a></button>
+                <div class="btn-group" role="group" aria-label="picture_success">
+                    <button type="button" class="btn btn-light" onclick="location.href='./letter_food_select.html';">상차리기<br>(편지쓰기)</button>
+                    <button type="button" class="btn btn-light" onclick="location.href='./picture_way_select.html';">병풍세우기<br>(사진이나그림)</button>
+                </div>
             </div>
             <div class="main-top right">
-                <button type="button" class="btn" id="help_btn"><img src="../image/icon/help.svg" alt="도움말"></button>
+                <button type="button" class="btn" id="help_btn" onclick="location.href='./help.html';">
+                    <img src="../image/icon/help.svg" alt="도움말">
+                </button>
             </div>
         </nav>
+        <script src="../resources/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

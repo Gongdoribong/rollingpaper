@@ -10,13 +10,13 @@
         <link rel="stylesheet" href="../CSS/style.css">
     </head>
     <body>
-        <nav>
-            <button class="btn"><a href="./letter_food_select.html">이전</a></button>
-            <button class="btn" type="submit">다음</button>
-        </nav>
         <div class="container">
+            <nav id="writing">
+                <button class="btn btn-outline-primary" onclick="location.href='./letter_food_select.html';">이전</button>
+                <button class="btn btn-outline-primary" onclick="location.href='./letter_success.html';">다음</button>
+            </nav>
             <div class="left">
-                <img src="https://dummyimage.com/300x300/929292/000000.png&text=preview+image" alt="전에 선택한거">
+                <img src="../image/food/궐련지_그림_닭튀김.png" alt="전에 선택한거">
                 <p>
                     선택한거 이름
                 </p>
@@ -25,13 +25,16 @@
                 </p>
             </div>
             <div class="right">
-                <div class="name">
-                    <label for="nickname" class="form-label">호패</label>
+                <div class="form-floating mb-3">
                     <textarea class="form-control" id="nickname" placeholder="닉네임 입력" cols="20" rows="1"></textarea>
+                    <label for="nickname" class="form-label">호패 (10자 이하)</label>
                 </div>
-                <div class="content">
+                <div class="form-floating">
+                    <textarea class="form-control" id="letter_context" placeholder="편지 입력" style="height: 300px;"></textarea>
                     <label for="letter_context" class="form-label">내용</label>
-                    <textarea class="form-control" id="letter_context" placeholder="편지 입력" cols="60" rows="15"></textarea>
+                    <div class="alert alert-primary" role="alert">
+                        *말을 할때는 ᄯᅩᆨ바로 해야합니다. 욕설 등은 삭제됩니다.
+                    </div>
                 </div>
             </div>
         </div>

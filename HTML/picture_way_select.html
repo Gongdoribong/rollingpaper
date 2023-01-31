@@ -10,13 +10,15 @@
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
-    <nav>
-        <button type="button" class="btn"><a href="./main.html">돌아가기</a></button>
-    </nav>
     <p> 이미지 등록 방식을 선택해주세요! </p>
     <div class="smallContainer">
-        <button type="button" class="btn btn-outline-light"><a href="./picture_upload.html">파일 업로드<img src="../image/icon/gallery.svg" alt="사진"></a></button>
-        <button type="button" class="btn btn-outline-light"><a href="./picture_drawing.html">그리기<img src="../image/icon/drawing.svg" alt="그리기"></a></button>
+        <nav>
+            <button type="button" class="btn btn-outline-primary" onclick="location.href='./main.html';">처음으로</button>
+        </nav>
+        <div class="way-select btn-group-vertical" role="group" aria-label="Vertical button group">
+            <button type="button" class="btn btn-outline-secondary" onclick="location.href='./picture_upload.html';"><img src="../image/icon/gallery.svg" alt="사진"><br>파일 업로드</button>
+            <button type="button" class="btn btn-outline-secondary" onclick="location.href='./picture_drawing.html';"><img src="../image/icon/drawing.svg" alt="그리기"><br>그리기</button>
+        </div>
     </div>
 </body>
 </html>

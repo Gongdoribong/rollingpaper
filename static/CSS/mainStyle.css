@@ -1,4 +1,12 @@
+@font-face {
+    font-family: 'EBSJSKMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/EBSJSKMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
+    font-family: 'EBSJSKMedium';
     height: 100vh;
     background-image: url("../image/background/background.jpg");
     background-size: cover;
@@ -15,7 +23,6 @@ body {
     right: 0;
     left: 0;
 }
-
 
 .main-bottom {
     display: flex;

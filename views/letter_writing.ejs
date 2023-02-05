@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>상차리기</title>
+
+        <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../CSS/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <form action="/api/writing" method="post">
+                <nav id="writing">
+                    <button class="btn btn-outline-primary" onclick="history.back()">이전</button>
+                    <button class="btn btn-outline-primary" onclick="location.href='./letter_success.html';">다음</button>
+                </nav>
+                <div class="left">
+                    <img src="../image/food/궐련지_그림_닭튀김.png" alt="전에 선택한거">
+                    <p>
+                        선택한거 이름
+                    </p>
+                    <p>
+                        선택한거 설명
+                    </p>
+                </div>
+                <div class="right">
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="nickname" name="nickname" placeholder="닉네임 입력" cols="20" rows="1"></textarea>
+                        <label for="nickname" class="form-label">호패 (10자 이하)</label>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" id="letter_context" name="letter_context" placeholder="편지 입력" style="height: 300px;"></textarea>
+                        <label for="letter_context" class="form-label">내용</label>
+                        <div class="alert alert-primary" role="alert">
+                            *말을 할때는 ᄯᅩᆨ바로 해야합니다. 욕설 등은 삭제됩니다.
+                        </div>
+                        <div class="alert alert-primary" role="alert">
+                            *중세국어, 한자도 입력 가능하나 방점은 깨질 수 있습니다.
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

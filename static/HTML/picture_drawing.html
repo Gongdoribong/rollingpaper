@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>병풍세우기</title>
+
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <button class="btn btn-outline-primary" type="button" onclick="location.href='./picture_way_select.html';">이전</button>
+            <button class="btn btn-outline-primary" type="button" onclick="location.href='./picture_success.html';">다음</button>
+        </nav>
+        <div class="sketchframe">
+            <canvas class="sketchpad" id="sketchpad"></canvas>
+        </div>
+        <div class="controls">
+            <div class="controls__range">
+                <input type="range" class="form-label" id="jsRange" min="0.1" max="5.0" value="2.5" step="0.1">
+            </div>
+            <div class="controls__colors" id="colors">
+                <div class="controls__color color" style="background-color: black;"></div>
+                <div class="controls__color color" style="background-color: white;"></div>
+                <div class="controls__color color" style="background-color: red;"></div>
+                <div class="controls__color color" style="background-color: orange;"></div>
+                <div class="controls__color color" style="background-color: yellow;"></div>
+                <div class="controls__color color" style="background-color: green;"></div>
+                <div class="controls__color color" style="background-color: blue;"></div>
+                <div class="controls__color color" style="background-color: navy;"></div>
+                <div class="controls__color color" style="background-color: purple;"></div>
+                <div class="controls__color color" style="background-color: #0c1842;"></div>
+                <div class="controls__color color" style="background-color: #4b4247;"></div>
+                <div class="controls__color color" style="background-color: #45242f;"></div>
+                <div class="controls__color color" style="background-color: #786e3d;"></div>
+                <div class="controls__color color" style="background-color: #f3d5b9;"></div>
+                <div class="controls__color color" style="background-color: #458edd;"></div>
+                <div class="controls__color color" style="background-color: #223442;"></div>
+                <div class="controls__color color" style="background-color: #4d4141;"></div>
+                
+            </div> 
+            
+            <!-- @@@@@@@@@@@@@@@@@@ 컬러팔레트 추가하기 @@@@@@@@@@@@@@@@@@@@-->
+    
+            <div class="controls__btns">
+                <button class="btn" id="erase">전부 지우게나!</button>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/drawingScript.js"></script>
+</body>
+</html>

@@ -24,7 +24,29 @@
     100% {background-position: 0px 0px, 0px 0px, 0px 0px;}
 }
 
+@font-face {
+    font-family: 'EBSJSKMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/EBSJSKMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*중세국어*/
+@font-face {
+    font-family: 'HANBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/HANBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*한자*/
+@font-face { 
+    font-family: 'ChosunGs';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGs.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
+    font-family: 'EBSJSKMedium';
 	background-image: url("../image/background/shape.png");
     background-size: 30%;
 	animation: rain_effect 40s linear infinite;
@@ -262,4 +284,16 @@ label.btn {
     padding-top: 5%;
     padding-left: 5%;
     padding-right: 5%;
+}
+
+.describe {
+    margin-top: 10%;
+    color: white;
+    font-size: 18pt;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
 }

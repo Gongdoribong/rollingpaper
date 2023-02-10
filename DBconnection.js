@@ -3,7 +3,7 @@ const conn = {  // mysql 접속 설정
     host: 'localhost',
     port: '3306',
     user: 'root',
-    password: '03131j..',
+    password: '',
     database: 'food_db'
 }
 

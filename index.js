@@ -10,7 +10,7 @@ app.use(express.static("./static"))
 
 app.use("/api", require("./api"))
 app.get("/", (req, res) => {
-    res.render("letter_food_select")
+    res.render("main")
 })
 
 

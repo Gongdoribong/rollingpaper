@@ -11,10 +11,10 @@
     </head>
     <body>
         <div class="container">
-            <form action="/api/writing" method="post">
+            <form action="/api/writing" method="post" class="formstyle">
                 <nav id="writing">
                     <button type="button" class="btn btn-outline-primary" onclick="history.back()">이전</button>
-                    <button type="submit" class="btn btn-outline-primary" onclick="location.href='./letter_success.html';">다음</button>
+                    <button type="submit" class="btn btn-outline-primary">다음</button>
                 </nav>
                 <div class="left">
                     <img src="../image/food/궐련지_그림_닭튀김.png" alt="전에 선택한거">
@@ -33,7 +33,7 @@
                     <div class="form-floating">
                         <textarea class="form-control" id="letter_context" name="letter_context" placeholder="편지 입력" style="height: 300px;"></textarea>
                         <label for="letter_context" class="form-label">내용</label>
-                        <div class="alert alert-primary" role="alert">
+                        <div class="alert alert-primary" role="alert" id="middleAge">
                             *말을 할때는 ᄯᅩᆨ바로 해야합니다. 욕설 등은 삭제됩니다.
                         </div>
                         <div class="alert alert-primary" role="alert">

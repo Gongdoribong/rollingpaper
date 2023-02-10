@@ -19,11 +19,13 @@
             <p>상 위에 올라갈 음식을 골라주시오</p>
         </div>
         <div class="smallContainer">
-            <form action="/api/food_select" method="get">
-                <nav class="fsnav">
-                    <button type="button" class="btn btn-outline-primary" onclick="location.href='./main.html';">처음으로</button>
-                    <button type="submit" class="btn btn-outline-primary">다음</button>
-                </nav>
+            <nav class="fsnav">
+                <form action="/api/success" method="get">
+                    <button type="submit" class="btn btn-outline-primary">처음으로</button>
+                </form>
+                <button type="submit" class="btn btn-outline-primary" form="foodlist">다음</button>
+            </nav>
+            <form action="/api/food_select" method="get" id="foodlist" class="formstyle">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="maindish-tab" data-bs-toggle="tab" data-bs-target="#maindish-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">식사</button>

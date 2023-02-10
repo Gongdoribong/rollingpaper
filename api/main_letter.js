@@ -3,7 +3,8 @@ const router = Router()
 
 router.get("/", async(req, res) => {
     let {option} = req.query
-    res.render("letter_writing")
+    res.render("letter_food_select")
 })
+
 
 module.exports = router

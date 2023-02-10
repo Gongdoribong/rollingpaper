@@ -17,8 +17,12 @@
         <nav>
             <div class="finish">
                 <div class="btn-group" role="group" aria-label="picture_success">
-                    <button type="button" class="btn btn-outline-primary" onclick="location.href='./letter_food_select.html';">편지쓰러 갑세</button>
-                    <button type="button" class="btn btn-outline-primary" onclick="location.href='./main.html';">처음으로</button>
+                    <form action="/api/main_letter" method="get">
+                        <button type="submit" class="btn btn-outline-primary">편지쓰러 갑세</button>
+                    </form>
+                    <form action="/api/success" method="get">
+                        <button type="submit" class="btn btn-outline-primary">처음으로</button>
+                    </form>
                 </div>
             </div>
         </nav>

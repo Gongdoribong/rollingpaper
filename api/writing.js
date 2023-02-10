@@ -2,11 +2,8 @@ const {Router} = require("express") //express 안에 있는것 중에서 Router 
 const router = Router()
 
 router.post("/", async(req, res) => {
-
-    
-
-
-    res.redirect("/letter_success")
+    let {option} = req.query
+    res.render("letter_success")
 })
 
 module.exports = router

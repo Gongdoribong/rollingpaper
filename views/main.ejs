@@ -20,16 +20,22 @@
             </div>
             <div class="main-bottom">
                 <div class="btn-group" role="group" aria-label="picture_success">
-                    <button type="button" class="btn btn-light" onclick="location.href='./letter_food_select.html';">상차리기<br>(편지쓰기)</button>
-                    <button type="button" class="btn btn-light" onclick="location.href='./picture_way_select.html';">병풍세우기<br>(사진이나그림)</button>
+                    <form action="/api/main_letter" method="get">
+                        <button type="submit" class="btn btn-light">상차리기<br>(편지쓰기)</button>
+                    </form>
+                    <form action="/api/main_picture" method="get">
+                        <button type="submit" class="btn btn-light">병풍세우기<br>(사진이나그림)</button>
+                    </form>
+                    </div>
                 </div>
-            </div>
-            <div class="main-top right">
-                <button type="button" class="btn" id="help_btn" onclick="location.href='./help.html';">
-                    <img src="../image/icon/help.svg" alt="도움말">
-                </button>
-            </div>
-        </nav>
+                <div class="main-top right">
+                    <form action="/api/main_help" method="get">
+                        <button type="submit" class="btn" id="help_btn">
+                            <img src="../image/icon/help.svg" alt="도움말">
+                        </button>
+                    </form>
+                </div>
+            </nav>
         <script src="../resources/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

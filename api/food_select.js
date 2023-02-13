@@ -6,8 +6,10 @@ router.get("/", async(req, res) => {
     var connection = await pool.getConnection()
     var food_option = req.query.option
 
-    var [food_name] = await connection.query('SELECT name FROM food_db.food WHERE food_name = ?;', food_option)
-    var [food_description] = await connection.query('SELECT description FROM food_db.food WHERE food_name = ?;', food_option)
+    var [data] = await connection.query('SELECT name, description FROM food_db.food WHERE food_name = ?', food_option)
+
+    var food_name = data[0]?.name
+    var food_description = data[0]?.description
 
     console.log(food_name, food_description)
 

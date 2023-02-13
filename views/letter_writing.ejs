@@ -17,21 +17,21 @@
                     <button type="submit" class="btn btn-outline-primary">다음</button>
                 </nav>
                 <div class="left">
-                    <img src="../image/food/궐련지_그림_닭튀김.png" alt="전에 선택한거">    <% %>
+                    <img src="../image/food/<%= fname %>" alt="전에 선택한거">    <!--ejs로 파일 이름 바뀌게 해서... 어쩌고 저쩌고 -->
                     <p>
-                        선택한거 이름
+                        <%= fname %>
                     </p>
                     <p>
-                        선택한거 설명
+                        <%= fdes %>
                     </p>
                 </div>
                 <div class="right">
                     <div class="form-floating mb-3">
-                        <textarea class="form-control" id="nickname" name="nickname" placeholder="닉네임 입력" cols="20" rows="1"></textarea>
+                        <textarea class="form-control" id="nickname" name="nickname" placeholder="닉네임 입력" cols="20" rows="1" required></textarea>
                         <label for="nickname" class="form-label">호패 (10자 이하)</label>
                     </div>
                     <div class="form-floating">
-                        <textarea class="form-control" id="letter_context" name="letter_context" placeholder="편지 입력" style="height: 300px;"></textarea>
+                        <textarea class="form-control" id="letter_context" name="letter_context" placeholder="편지 입력" style="height: 300px;" required></textarea>
                         <label for="letter_context" class="form-label">내용</label>
                         <div class="alert alert-primary" role="alert" id="middleAge">
                             *말을 할때는 ᄯᅩᆨ바로 해야합니다. 욕설 등은 삭제됩니다.

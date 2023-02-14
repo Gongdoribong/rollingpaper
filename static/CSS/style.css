@@ -74,6 +74,17 @@ body {
     flex-flow: column wrap;
     border-radius: 30px;
 }
+
+#writing {
+    position: absolute;
+    top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
 /* 대지 */
 .container {
     position: absolute;

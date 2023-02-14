@@ -264,8 +264,17 @@ label.btn {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
+
+.fname {
+    font-size: 30px;
+}
+
+.fdes {
+    font-size: 20px;
+}
+
 .right {
     width: 500px;
     display: flex;

@@ -11,17 +11,18 @@
     </head>
     <body>
         <form action="/api/writing" method="post" class="formstyle">
+            <input type="hidden" name="fEname" value="<%= fEname %>"/>
             <div class="container">
                 <nav id="writing">
                     <button type="button" class="btn btn-outline-primary" onclick="history.back()">이전</button>
                     <button type="submit" class="btn btn-outline-primary">다음</button>
                 </nav>
                 <div class="left">
-                    <img src="../image/food/<%= fEname %>.png" alt="전에 선택한거">    <!--ejs로 파일 이름 바뀌게 해서... 어쩌고 저쩌고 -->
-                    <p>
+                    <img src="../image/food/<%= fEname %>.png" alt="전에 선택한거" class="fimg">
+                    <p class="fname">
                         <%= fname %>
                     </p>
-                    <p>
+                    <p class="fdes">
                         <%= fdes %>
                     </p>
                 </div>

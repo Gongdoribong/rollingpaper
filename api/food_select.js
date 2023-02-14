@@ -11,8 +11,6 @@ router.get("/", async(req, res) => {
     var food_name = data[0]?.name
     var food_description = data[0]?.description
 
-    console.log(food_option, food_name, food_description)
-
     let {option} = req.query
     res.render("letter_writing", { fEname:food_option, fname: food_name, fdes: food_description })
 })

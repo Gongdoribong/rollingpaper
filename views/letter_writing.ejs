@@ -9,14 +9,15 @@
         <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
         <link rel="stylesheet" href="../CSS/style.css">
         <link rel="stylesheet" href="../CSS/mobileStyle.css">
+        <script defer src="../JS/letter_writing.js"></script>
     </head>
     <body>
-        <form action="/api/writing" method="post" class="formstyle">
+        <form class="formstyle">
             <input type="hidden" name="fEname" value="<%= fEname %>"/>
             <div class="container">
                 <nav id="writing">
-                    <button type="button" class="btn btn-outline-primary" onclick="history.back()">이전</button>
-                    <button type="submit" class="btn btn-outline-primary">다음</button>
+                    <button type="button" class="btn btn-outline-primary prev">이전</button>
+                    <button type="button" class="btn btn-outline-primary next">다음</button>
                 </nav>
                 <div class="left">
                     <img src="../image/food/<%= fEname %>.png" alt="전에 선택한거" class="fimg">

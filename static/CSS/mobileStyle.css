@@ -60,6 +60,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow-y: hidden;
     }
 
     .btn-outline-primary {
@@ -248,6 +249,7 @@
         display: flex;
         flex-flow: row wrap;
         justify-items: space-between;
+        overflow-y: auto;
     }
     label.btn {
         padding: 0px;
@@ -278,6 +280,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .fimg {
+        max-width: 50%;
+        margin-top: 150px;
     }
 
     .fname {

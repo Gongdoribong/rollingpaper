@@ -19,7 +19,7 @@
             </nav>
             <div class="upload">
                 <label for="formFile" class="form-label">업로드 (비율은 3:5로 자동 조정됩니다.)</label>
-                <input class="form-control" type="file" id="formFile" onchange="setThumbnail(event);">
+                <input class="form-control" type="file" id="formFile" accept="image/jpeg, image/gif, image/png" onchange="setThumbnail(event);">
         
                 <label for="preview-image" class="form-label">미리보기</label>
                 <div id="preview-image" class="ratio" style="--bs-aspect-ratio: calc(5 / 3 * 100%);">

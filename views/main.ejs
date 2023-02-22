@@ -12,8 +12,11 @@
     </head>
 
     <body>
-        <img class="screen" src="../image/background/screen.png" alt="병풍">
         <img class="desk" src="../image/background/desk.png" alt="상">
+        <div class="food-table carousel slide" data-bs-ride="carousel" data-bs-interval="2000" >
+
+        </div>
+
         <nav class="menu">
             <div class="main-top left">
                 <button type="button" class="btn" id="musicOn_btn"></button>
@@ -23,19 +26,17 @@
                     <form action="/api/main_letter" method="get">
                         <button type="submit" class="btn btn-light">상차리기<br>(편지쓰기)</button>
                     </form>
-                    <form action="/api/main_picture" method="get">
-                        <button type="submit" class="btn btn-light">병풍세우기<br>(사진이나그림)</button>
-                    </form>
-                    </div>
                 </div>
-                <div class="main-top right">
-                    <form action="/api/main_help" method="get">
-                        <button type="submit" class="btn" id="help_btn">
-                            <img src="../image/icon/help.svg" alt="도움말">
-                        </button>
-                    </form>
-                </div>
-            </nav>
+            </div>
+            <div class="main-top right">
+                <form action="/api/main_help" method="get">
+                    <button type="submit" class="btn" id="help_btn">
+                        <img src="../image/icon/help.svg" alt="도움말">
+                    </button>
+                </form>
+            </div>
+        </nav>
         <script src="../resources/js/bootstrap.bundle.min.js"></script>
+        <script src="/js/mainScript.js"></script>
     </body>
 </html>

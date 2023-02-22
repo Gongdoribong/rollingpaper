@@ -16,7 +16,7 @@
             body: JSON.stringify({fEname, nickname, letter_context})
         })
         if(res.ok){
-            window.location.href = '/api/success';
+            window.location.href = '/api/writing/success';
         }
         else{
             alert((await res.json()).message);

@@ -11,7 +11,11 @@ app.use(express.urlencoded({extended:false}));
 
 
 app.use("/api", require("./api"))
-app.get("/", (req, res) => {
+
+app.get('/favicon.ico', (req, res) => {
+    res.redirect('/image/icon/favicon.png')
+})
+app.get("/", async (req, res) => {
     res.render("main")
 })
 

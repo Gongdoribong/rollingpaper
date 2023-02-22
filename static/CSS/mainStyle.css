@@ -45,6 +45,43 @@ body {
     height: 89vh;
 }
 
+div.food-table {
+    position: fixed;
+    height: 300px;
+    width: 100vw;
+    bottom: 120px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+div.food-box {
+    display: block;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    width: 160px;
+    height: 230px;
+}
+
+div.nickname {
+    height: 30px;
+    text-align: center;
+}
+
+div.nickname > span {
+    margin: auto;
+}
+img.food-item {
+    height: calc(100% - 30px);
+}
+
+div.food-table::-webkit-scrollbar {
+    display: none;
+}
+
 @media (max-width: 767.98px){
     .menu {
         display: block;
@@ -57,14 +94,16 @@ body {
     
         z-index: 1018;
     }
-    
+    /*
     .main-top.left {
         left: 0;
 
         z-index: 4080;
     }
-    
+    */
     .main-top.right {
+        position: absolute;
+        top: 0;
         right: 0;
 
         z-index: 4080;

@@ -6,11 +6,11 @@ router.get("/", async(req, res) => {
     res.render("main")
 })
 
-router.get("/main_letter", async(req, res) => {
+router.get("/food_select", async(req, res) => {
     res.render("letter_food_select")
 })
 
-router.get("/food_select", async(req, res) => {
+router.get("/main_letter", async(req, res) => {
     var connection = await pool.getConnection()
     var food_option = req.query.option
 
@@ -23,7 +23,7 @@ router.get("/food_select", async(req, res) => {
 })
 
 router.get("/writing", async(req, res) => {
-    res.render('letter_success');
+    res.render("letter_success");
 })
 
 router.get("/success", async(req, res) => {

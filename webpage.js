@@ -19,7 +19,7 @@ router.get("/main_letter", async(req, res) => {
     var food_name = data[0]?.name
     var food_description = data[0]?.description
 
-    res.render("letter_writing", { fEname:food_option, fname: food_name, fdes: food_description })
+    res.render("letter_writing", { fEname: food_option, fname: food_name, fdes: food_description })
 })
 
 router.get("/writing", async(req, res) => {

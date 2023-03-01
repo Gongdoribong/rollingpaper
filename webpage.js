@@ -22,12 +22,8 @@ router.get("/main_letter", async(req, res) => {
     res.render("letter_writing", { fEname:food_option, fname: food_name, fdes: food_description })
 })
 
-router.get("/writing", async(req, res) => {
-    res.render("letter_success");
-})
-
 router.get("/success", async(req, res) => {
-    res.render("main")
+    res.render("letter_success")
 })
 
 router.get("/help", async(req, res) => {

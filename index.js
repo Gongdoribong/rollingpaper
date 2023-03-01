@@ -8,9 +8,8 @@ app.use(express.static("./static"))
 app.use(express.json())
 app.use(express.urlencoded({extended:false}));
 
-
-
 app.use("/api", require("./api"))
+app.use("/", require('./webpage'))
 
 app.get('/favicon.ico', (req, res) => {
     res.redirect('/image/icon/favicon.png')

@@ -23,10 +23,8 @@ router.post("/", async(req, res) => {
     else {
         await connection.query('INSERT into submitlist(food_name, name, content) values(?, ?, ?);', [food_name, nickname, letter])
 
-
         res.status(200).json({
-            result: 'success',
-            message: ''
+            result: 'success'
         });
     }
 })

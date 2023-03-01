@@ -11,13 +11,14 @@ router.post("/", async(req, res) => {
 
     console.log(nickname, letter, food_name)
 
-    let [check_duplicate] = connection.query('SELECT COUNT(name) AS duplicate FROM submitlist WHERE name=?', nickname);
+    let [check_duplicate] = await connection.query('SELECT COUNT(name) AS duplicate FROM food_db.submitlist WHERE name=?', nickname);
+    console.log(check_duplicate)
 
     if(check_duplicate[0]?.duplicate){
         res.status(400).json({
             result: 'fail',
             reason: 'DUPLICATE_ITEM',
-            message: '중복된 이름은 사용할 수 없습니다.'
+            message: '호패가 중복되었소. 다른 호패로 변경해주오.'
         });
     }
     else {
@@ -27,6 +28,10 @@ router.post("/", async(req, res) => {
             result: 'success'
         });
     }
+})
+
+router.get('/success', (req, res) => {
+    res.render('letter_success');
 })
 
 module.exports = router

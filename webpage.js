@@ -3,6 +3,14 @@ const pool = require("../DBconnection")
 const router = Router()
 
 router.get("/", async(req, res) => {
+    res.render("main")
+})
+
+router.get("/main_letter", async(req, res) => {
+    res.render("letter_food_select")
+})
+
+router.get("/food_select", async(req, res) => {
     var connection = await pool.getConnection()
     var food_option = req.query.option
 
@@ -12,6 +20,18 @@ router.get("/", async(req, res) => {
     var food_description = data[0]?.description
 
     res.render("letter_writing", { fEname:food_option, fname: food_name, fdes: food_description })
+})
+
+router.get("/writing", async(req, res) => {
+    res.render('letter_success');
+})
+
+router.get("/success", async(req, res) => {
+    res.render("main")
+})
+
+router.get("/help", async(req, res) => {
+    res.render("help")
 })
 
 module.exports = router

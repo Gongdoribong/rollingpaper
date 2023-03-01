@@ -5,6 +5,7 @@
         e.preventDefault();
         localStorage.setItem('option', new FormData(form).get('option').toString())
         form.submit();
+
     })
 
     // 임시저장 데이터 불러오기

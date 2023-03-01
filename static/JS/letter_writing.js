@@ -1,5 +1,9 @@
 (function(form, button_prev, button_next){
-    
+    String.prototype.isEmpty = function(){
+        return this === null || this.match(/^ *$/) !== null;
+    }
+
+
     button_prev.addEventListener('click', () => window.location.href = '/food_select');
     button_next.addEventListener('click', async e => {
         // FormData 임시저장
@@ -11,7 +15,13 @@
         let fEname = document.querySelector('input[name=fEname]').value;
         let nickname = document.querySelector('textarea[name=nickname]').value;
         let letter_context = document.querySelector('textarea[name=letter_context]').value;
+
         console.log({fEname, nickname, letter_context});
+
+        if(nickname.isEmpty() || letter_context.isEmpty()){
+            alert("닉네임과 편지는 비워둘 수 없습니다.");
+            return;
+        }
 
         let res = await fetch('/api/writing', {
             method: 'POST',

@@ -3,4 +3,6 @@ const router = Router()
 
 router.use('/writing', require('./writing'));
 
+router.use('/table_maker', require('./table_maker'))
+
 module.exports = router
